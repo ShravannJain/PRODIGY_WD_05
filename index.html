@@ -6,20 +6,32 @@
     <title>Quick Weather</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
     <div class="main-container">
         <header class="heading">
-
+        <div class="search-bar">
+            <input id="search" type="text" placeholder="enter city name">
+            <i class="fa fa-search"></i>
+        </div>
+        <div id="header">
+            The weather
+        </div>
         </header>
-        <div class="weather-place">
-            place
+        <div class="weather-place-details">
+            <div class="temperature"></div>
+            <div class="weather-place"></div>
         </div>
-        <div class="temperature">
-            temperature
+        <div class="temperature-detail">
+         
         </div>
-        <div class="weather-days-time">
-            days forecast
+        <div class="weather-forecase">
+            <p id="fore-head">Today's Forecast</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Visibility: <span id="Visibility"></span>m</p>
+                <p>Wind: <span id="wind"></span> km/h</p>
+            </div>
         </div>
 </body>
 </html>
