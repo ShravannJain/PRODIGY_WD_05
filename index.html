@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Weather</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,16 @@
         <header class="heading">
             <div class="search-bar">
                 <input id="search" type="text" placeholder="enter city name">
-                <i class="fa fa-search"></i>
+                <button><i class="fa fa-search"></i></button>
             </div>
             <div id="header">
                 The weather
             </div>
         </header>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <section class="main-sec">
         <div class="weather-place-details">
             <div class="temperature"></div>
             <div >
@@ -50,8 +54,9 @@
             <div class="time"></div>
             <div class="date"></div>
         </div>
+    </section>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
