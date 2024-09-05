@@ -18,13 +18,18 @@ html,body{
     position: absolute;
     left: 950px;
     color: white;
-    font: 20px;
+    
+    font-size: larger;
+        font-family: "Lobster Two", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      
 }
 .main-container{
     height: 80%;
     width: 40%;
     border-radius: 15px;
-    background: url(weather_pictures/img8.jpg);
+    background: url(weather_pictures/img11.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,14 +77,76 @@ input[type=text]{
 .weather-forecase{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 30%;
     margin-top: 30%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    backdrop-filter: blur(3px);
+    color: white;
+  backdrop-filter: blur(2px);
+}
+#fore-head{
+    font-size: 25px;
+    position: relative;
+    bottom: 40px;
+   font-size: larger;
+        font-family: "Lobster Two", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+}
+.fore-details p{
+    /* margin-top: 10px; */
+    position: relative;
+    top: -15px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal
+}
+#wind{
+    margin-left: 65px;
+}
+.values{
+    margin-left: 40px;
+}
+.time-container{
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    height: 100px;
+    width: 200px;
+    /* background-color: black; */
     color: white;
 }
-#fore-heading{
-    font-size: 25px;
+.date{
+ 
+    color: white;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.day{
+    color: white;
+    font-size: 40px;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+.time{
+    position: absolute;
+    left: 63%;
+    top: -20%;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal
 }

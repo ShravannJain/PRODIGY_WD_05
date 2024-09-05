@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Weather</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="main-container">
         <header class="heading">
-        <div class="search-bar">
-            <input id="search" type="text" placeholder="enter city name">
-            <i class="fa fa-search"></i>
-        </div>
-        <div id="header">
-            The weather
-        </div>
+            <div class="search-bar">
+                <input id="search" type="text" placeholder="enter city name">
+                <i class="fa fa-search"></i>
+            </div>
+            <div id="header">
+                The weather
+            </div>
         </header>
         <div class="weather-place-details">
             <div class="temperature"></div>
-            <div class="weather-place"></div>
+            <div >
+                <div class="place">
+                    <p class="weather-place"></p>
+                    <p class="country"></p>
+                </div>
+            </div>
         </div>
         <div class="temperature-detail">
-         
+
         </div>
         <div class="weather-forecase">
             <p id="fore-head">Today's Forecast</p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-                <p>Visibility: <span id="Visibility"></span>m</p>
-                <p>Wind: <span id="wind"></span> km/h</p>
+            <div class="fore-details">
+                <p>Humidity <span class="values" id="humidity"></span>%</p>
+                <p>Visibility <span class="values" id="Visibility"></span>m</p>
+                <p>Wind <span class="values1" id="wind"></span>km/h</p>
             </div>
         </div>
+        <div class="time-container">
+            <div class="day"></div>
+            <div class="time"></div>
+            <div class="date"></div>
+        </div>
+    </div>
+
 </body>
+
 </html>
